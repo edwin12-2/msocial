@@ -38,7 +38,7 @@ img {
   justify-content: center;
 }
 
-#inputTweetArea {
+#inputsocialArea {
   border-radius: 20px;
 }
 
@@ -54,7 +54,7 @@ img {
   padding: 0;
 }
 
-.tweet-wrap {
+.social-wrap {
   max-width: 490px;
   background: #fff;
   margin: 0 auto;
@@ -65,43 +65,43 @@ img {
   border-top: 1px solid #e6ecf0;
 }
 
-.tweet-header {
+.social-header {
   display: flex;
   align-items: flex-start;
   font-size: 14px;
 }
 
-.tweet-header-info {
+.social-header-info {
   font-weight: bold;
 }
 
-.tweet-header-info span {
+.social-header-info span {
   color: #657786;
   font-weight: normal;
   margin-left: 5px;
 }
 
-.tweet-header-info p {
+.social-header-info p {
   font-weight: normal;
   margin-top: 5px;
 }
 
-.tweet-img-wrap {
+.social-img-wrap {
   padding-left: 60px;
 }
 
-.tweet-info-counts {
+.social-info-counts {
   display: flex;
   margin-left: 60px;
   margin-top: 10px;
 }
 
-.tweet-info-counts div {
+.social-info-counts div {
   display: flex;
   margin-right: 20px;
 }
 
-.tweet-info-counts div svg {
+.social-info-counts div svg {
   color: #657786;
   margin-right: 10px;
 }
@@ -111,23 +111,23 @@ img {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .tweet-header {
+  .social-header {
     flex-direction: column;
   }
-  .tweet-header img {
+  .social-header img {
     margin-bottom: 20px;
   }
-  .tweet-header-info p {
+  .social-header-info p {
     margin-bottom: 30px;
   }
-  .tweet-img-wrap {
+  .social-img-wrap {
     padding-left: 0;
   }
-  .tweet-info-counts {
+  .social-info-counts {
     display: flex;
     margin-left: 0;
   }
-  .tweet-info-counts div {
+  .social-info-counts div {
     margin-right: 10px;
   }
 }
@@ -168,11 +168,11 @@ a:link {
     margin: 20px auto;
 }
 
-.twitter-login-box header img{
+.msocial-login-box header img{
     width: 70px;
 }
 
-.twitter-login-box header{
+.msocial-login-box header{
     text-align: center;
 }
 .input-wrapper{
@@ -207,7 +207,7 @@ a:link {
     color: #6a6a6a;
 }
 
-.twitter-btn{
+.msocial-btn{
     background-color: #1E96EB;
     border: none;
     width: 100%;
@@ -218,12 +218,12 @@ a:link {
     font-weight: bold;
 }
 
-.twitter-login-box .footer{
+.msocial-login-box .footer{
     text-align: center;
     margin-top: 20px;
     color: #1E96EB;
 }
-.twitter-login-box .footer a{
+.msocial-login-box .footer a{
     color: #1E96EB;
     text-decoration: none;
 }

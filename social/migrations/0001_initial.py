@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
             name='Profile',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('bio', models.CharField(default='Hola, twitter', max_length=100)),
+                ('bio', models.CharField(default='Hola, msocial', max_length=100)),
                 ('image', models.ImageField(default='default.png', upload_to='')),
                 ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],

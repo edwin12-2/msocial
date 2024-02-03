@@ -20,7 +20,7 @@ const getData = async () => {
 getData();
 
 let textArea = document.getElementById('contentsBox');
-let tweetList = []
+let socialList = []
 let id = 0;
 
 let countChar = () => {

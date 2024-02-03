@@ -33,7 +33,6 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'social.apps.SocialConfig',
-    'render.apps.RenderConfig',
     'django.contrib.humanize',
     'django.contrib.admin',
     'django.contrib.auth',
