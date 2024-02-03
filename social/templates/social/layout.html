@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     
     <link rel="shortcut icon" href="../static/img/tab-icon.png" type="image/x-icon">
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,18 +28,19 @@
                 <!-- msocial logo -->
                 MSocial
             </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="hi mr-auto">
-
+            <div class="collapse navbar-collapse form-inline my-2 my-lg-0" id="navbarSupportedContent">
+                <ul class="hi mr-auto " >
                 </ul>
-                <!-- Nav Bar -->
-                {% if request.user.is_authenticated %}
-                    <a href="{% url 'home' %}" class="btn text-white my-6 my-sm-0" type="submit">Inicio</a>
-                    <a href="{% url 'logout' %}" class="btn text-white my-6 my-sm-0" type="submit">Logout</a>
-                {% else %}
-                    <a href="{% url 'home' %}" class="btn text-white my-6 my-sm-0" type="submit">Inicio</a>
-                {% endif %}
-                <!-- Nav Bar -->
+                <ul class="form-inline my-2 my-lg-0" >
+                    <!-- Nav Bar -->
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'home' %}" class="btn btn-primary text-white mr-sm-2" type="submit">Inicio</a>
+                        <a href="{% url 'logout' %}" class="btn btn-primary text-white my-2 my-sm-0" type="submit">Logout</a>
+                    {% else %}
+                        <a href="{% url 'home' %}" class="btn btn-primary text-white my-6 my-sm-0" type="submit">Inicio</a>
+                    {% endif %}
+                    <!-- Nav Bar -->
+                </ul>
             </div>
         </nav>
     </div>

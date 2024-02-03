@@ -15,23 +15,31 @@
                     <!-- Formulario -->
                     <form class="col pr-0" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
-                        <div class="input-wrapper">
+                        <div class="">
                             <label>Nombre</label>
-                            {{ u_form.first_name }}
+                            <div>
+                                {{ u_form.first_name }}
+                            </div>
                         </div>
-                        <div class="input-wrapper">
+                        <div class="">
                             <label for="user-name-id">Username</label>
-                            {{ u_form.username }}
+                            <div>
+                                {{ u_form.username }}
+                            </div>
                         </div>
-                        <div class="input-wrapper">
+                        <div class="">
                             <label>Bio</label>
-                            {{ p_form.bio }}
+                            <div>
+                                {{ p_form.bio }}
+                            </div>
                         </div>
-                        <div class="input-wrapper">
-                            {{ p_form.image }}
+                        <div class="m-2">
+                            <div>
+                                {{ p_form.image }}
+                            </div>
                         </div>
 
-                        <button class="msocial-btn">Actualizar</button>
+                        <button class="btn btn-primary">Actualizar</button>
                     </form>
                     <!-- Formulario -->
                     

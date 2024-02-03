@@ -1,38 +1,51 @@
 {% extends 'social/layout.html' %}
 
 {% block content %}
-<body class="login-page">
-    <div class="msocial-login-box">
+<body class="text-center">
+    <div class="form-register">
         <header>
             {% comment %} <img src="" alt="msocial logo"> {% endcomment %}
             <h1>Registrate en Msocial</h1>
         </header>
 
-        <form method="post">
+        <form method="post" class="form-label-group">
             {% csrf_token %}
-            <div class="input-wrapper">
-                <label for="user-name-id">First Name</label>
-                {{ form.first_name }}
+            <div class="">
+                <label for="user-name-id" class="">First Name</label>
+                <div class="">
+                    {{ form.first_name }}
+                </div>
             </div>
-            <div class="input-wrapper">
-                <label for="user-name-id">Username</label>
-                {{ form.username }}
+            <div class="">
+                <label for="user-name-id" class="">Username</label>
+                <div>
+                    {{ form.username }}
+                </div>
             </div>
-            <div class="input-wrapper">
-                <label for="user-name-id">Email</label>
-                {{ form.email }}
+            <div class="">
+                <label for="user-name-id" class="">Email</label>
+                <div>
+                    {{ form.email }}
+                </div>
             </div>
-
-            <div class="input-wrapper">
-                <label for="password-id">Password</label>
-                {{ form.password1 }}
+            <div class="">
+                <label for="password-id" class="">Password</label>
+                <div required minlength="8">
+                    {{ form.password1 }}
+                </div>
+                <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, capital letters.
+                </div>
             </div>
-            <div class="input-wrapper">
-                <label for="password-id">Confirm Password</label>
-                {{ form.password2 }}
+            <div class="">
+                <label for="password-id" class="">Confirm Password</label>
+                <div class="">
+                    {{ form.password2 }}
+                </div>
             </div>
-
-            <button class="btn btn-primary">Registrarse</button>
+            <div class="pd-2 m-2">
+                <button class="btn btn-primary">Registrarse</button>
+            </div>
         </form>
 
         <div class="footer">
