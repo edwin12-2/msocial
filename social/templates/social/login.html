@@ -1,0 +1,35 @@
+{% extends 'social/layout.html' %}
+
+{% block content %}
+<body class="login-page">
+    <div class="msocial-login-box">
+        <header>
+            {% comment %} <img src="" alt="logo"> {% endcomment %}
+            <h1>Inicia Sesión</h1>
+        </header>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="input-wrapper">
+                <label for="user-name-id">Username</label>
+                {{ form.username }}
+            </div>
+
+            <div class="input-wrapper">
+                <label for="password-id">Password</label>
+                {{ form.password }}
+            </div>
+            {% if form.errors %}
+            <p>Username or password not correct.</p>
+            {% endif %}
+
+            <button class="btn btn-primary">Log in</button>
+        </form>
+
+        <div class="footer">
+            {% comment %} <a href="#">Forget Password</a> .  {% endcomment %}
+            <a href="/register">Sign up</a>
+        </div>
+
+    </div>
+{% endblock content %}

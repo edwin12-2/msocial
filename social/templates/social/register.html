@@ -1,0 +1,44 @@
+{% extends 'social/layout.html' %}
+
+{% block content %}
+<body class="login-page">
+    <div class="msocial-login-box">
+        <header>
+            {% comment %} <img src="" alt="twitter logo"> {% endcomment %}
+            <h1>Registrate en Msocial</h1>
+        </header>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="input-wrapper">
+                <label for="user-name-id">First Name</label>
+                {{ form.first_name }}
+            </div>
+            <div class="input-wrapper">
+                <label for="user-name-id">Username</label>
+                {{ form.username }}
+            </div>
+            <div class="input-wrapper">
+                <label for="user-name-id">Email</label>
+                {{ form.email }}
+            </div>
+
+            <div class="input-wrapper">
+                <label for="password-id">Password</label>
+                {{ form.password1 }}
+            </div>
+            <div class="input-wrapper">
+                <label for="password-id">Confirm Password</label>
+                {{ form.password2 }}
+            </div>
+
+            <button class="btn btn-primary">Registrarse</button>
+        </form>
+
+        <div class="footer">
+            <a href="/login">¿Ya tienes una cuenta? Login</a>
+        </div>
+
+    </div>
+
+{% endblock content %}
