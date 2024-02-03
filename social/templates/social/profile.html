@@ -57,15 +57,17 @@
                             <p>{{ post.content }}</p>
                         </div>
                     </div>
+                    {% if request.user == post.user %}
                     <div class="social-info-counts">
                         <!-- DELETE -->
                         <div class="trash">
-                            <a href="#" style="background: white; border: none;">
+                            <a href="{% url 'delete' post.id %}" style="background: white; border: none;">
                                 <i class="fa fa-trash-o" style="color:#657786; font-size: 20px" aria-hidden="true"></i>
                             </a>
                         </div>
                         <!-- END-DELETE -->
                     </div>
+                    {% endif %}
                 </div>
                 <!-- FOR LOOP HERE -->
 
